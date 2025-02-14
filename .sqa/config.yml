@@ -15,56 +15,56 @@ sqa_criteria:
     repos:
       github.com/IraitzM/data-complexity-profiler git:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-alizarin-flamingo.sh
-        container: qc.acc_homely-khaki-kudu
+        - /usr/bin/env sh .sqa/script.woozy-ivory-tapir.sh
+        container: qc.acc_skimpy-heliotrope-uakari
   QC.Doc:
     repos:
       github.com/IraitzM/data-complexity-profiler find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-vermilion-falcon.sh
-        container: qc.doc_goopy-cinnabar-impala
+        - /usr/bin/env sh .sqa/script.skanky-brown-salamander.sh
+        container: qc.doc_stinky-khaki-toucan
       github.com/IraitzM/data-complexity-profiler git:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-salmon-slug.sh
-        container: qc.doc_grumpy-sangria-gorilla
+        - /usr/bin/env sh .sqa/script.greasy-amethyst-terrier.sh
+        container: qc.doc_muzzy-rust-bear
       github.com/IraitzM/data-complexity-profiler markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-firebrick-indri.sh
-        container: qc.doc_flimsy-bronze-dragonfly
+        - /usr/bin/env sh .sqa/script.grumpy-asparagus-buffalo.sh
+        container: qc.doc_flaky-lavender-bullfrog
   QC.Lic:
     repos:
       github.com/IraitzM/data-complexity-profiler licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-indigo-fousek.sh
-        container: qc.lic_snappy-beige-whippet
+        - /usr/bin/env sh .sqa/script.tasty-dandelion-macaque.sh
+        container: qc.lic_flabby-rust-cheetah
   QC.Met:
     repos:
       github.com/IraitzM/data-complexity-profiler cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-razzmatazz-molly.sh
-        container: qc.met_seedy-bronze-peccary
+        - /usr/bin/env sh .sqa/script.scanty-azure-affenpinscher.sh
+        container: qc.met_surly-purple-walrus
   QC.Sec:
     repos:
       github.com/IraitzM/data-complexity-profiler bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-gamboge-zorse.sh
-        container: qc.sec_trippy-gold-schnauzer
+        - /usr/bin/env sh .sqa/script.whiny-celadon-chicken.sh
+        container: qc.sec_grumpy-lilac-bat
   QC.Sty:
     repos:
       github.com/IraitzM/data-complexity-profiler flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-olivine-barracuda.sh
-        container: qc.sty_snoopy-lime-forest
+        - /usr/bin/env sh .sqa/script.cheeky-viridian-rabbit.sh
+        container: qc.sty_bumpy-cornflower-iguana
   QC.Uni:
     repos:
       github.com/IraitzM/data-complexity-profiler pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-sapphire-penguin.sh
-        container: qc.uni_chummy-platinum-bandicoot
+        - /usr/bin/env sh .sqa/script.baggy-rust-bobcat.sh
+        container: qc.uni_nippy-ochre-zorse
   QC.Ver:
     repos:
       github.com/IraitzM/data-complexity-profiler get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-carmine-eel.sh
-        container: qc.ver_shaggy-champagne-dolphin
+        - /usr/bin/env sh .sqa/script.queasy-plum-fly.sh
+        container: qc.ver_frumpy-ruby-impala
 timeout: 5400
