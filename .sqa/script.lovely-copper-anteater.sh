@@ -5,5 +5,5 @@
 
 (
 cd github.com/IraitzM/data-complexity-profiler &&
-    tox -c tox.ini -e
+    pytest  --json-report  --json-report-indent 4
 )
