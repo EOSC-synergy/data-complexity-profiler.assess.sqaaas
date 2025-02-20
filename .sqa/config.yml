@@ -2,10 +2,10 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.2.1
+      branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/IraitzM/data-complexity-profiler:
-      branch: main
+      branch: fix/sqa
       repo: https://github.com/IraitzM/data-complexity-profiler
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,56 +15,56 @@ sqa_criteria:
     repos:
       github.com/IraitzM/data-complexity-profiler git:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-lemon-centipede.sh
-        container: qc.acc_stealthy-tomato-toucan
+        - /usr/bin/env sh .sqa/script.shaggy-indigo-mule.sh
+        container: qc.acc_beady-auburn-reindeer
   QC.Doc:
     repos:
       github.com/IraitzM/data-complexity-profiler find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-pear-capuchin.sh
-        container: qc.doc_lumpy-cerulean-seal
+        - /usr/bin/env sh .sqa/script.bluesy-cinnamon-millipede.sh
+        container: qc.doc_messy-mustard-tiger
       github.com/IraitzM/data-complexity-profiler git:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-rose-paradise.sh
-        container: qc.doc_nippy-tangerine-mandrill
+        - /usr/bin/env sh .sqa/script.stinky-bronze-elephant.sh
+        container: qc.doc_woozy-ultramarine-opossum
       github.com/IraitzM/data-complexity-profiler markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-myrtle-uakari.sh
-        container: qc.doc_smelly-white-duck
+        - /usr/bin/env sh .sqa/script.thirsty-jade-squirt.sh
+        container: qc.doc_snippy-lavender-armadillo
   QC.Lic:
     repos:
       github.com/IraitzM/data-complexity-profiler licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-plum-chameleon.sh
-        container: qc.lic_thirsty-sangria-crab
+        - /usr/bin/env sh .sqa/script.crabby-asparagus-hornet.sh
+        container: qc.lic_lovely-taupe-dragonfly
   QC.Met:
     repos:
       github.com/IraitzM/data-complexity-profiler cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-orchid-catfish.sh
-        container: qc.met_seedy-corn-shark
+        - /usr/bin/env sh .sqa/script.cheeky-lime-termite.sh
+        container: qc.met_sunny-bronze-dragonfly
   QC.Sec:
     repos:
       github.com/IraitzM/data-complexity-profiler bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-pear-manatee.sh
-        container: qc.sec_muzzy-sapphire-bordeaux
+        - /usr/bin/env sh .sqa/script.clammy-razzmatazz-coyote.sh
+        container: qc.sec_pasty-coral-quail
   QC.Sty:
     repos:
       github.com/IraitzM/data-complexity-profiler flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-peach-bison.sh
-        container: qc.sty_whiny-azure-lemming
+        - /usr/bin/env sh .sqa/script.seedy-beige-ibis.sh
+        container: qc.sty_scanty-azure-chamois
   QC.Uni:
     repos:
-      github.com/IraitzM/data-complexity-profiler pytest:
+      github.com/IraitzM/data-complexity-profiler tox:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-cream-lemur.sh
-        container: qc.uni_boozy-mauve-kakapo
+        - /usr/bin/env sh .sqa/script.pretty-buff-zonkey.sh
+        container: qc.uni_crabby-cardinal-oriole
   QC.Ver:
     repos:
       github.com/IraitzM/data-complexity-profiler get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-purple-kakapo.sh
-        container: qc.ver_scaly-aqua-blue
+        - /usr/bin/env sh .sqa/script.sickly-ruby-butterfly.sh
+        container: qc.ver_scaly-celadon-birman
 timeout: 5400
